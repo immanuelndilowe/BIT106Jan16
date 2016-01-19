@@ -42,10 +42,10 @@ public class Shop
 		
 		double discount = (double) discPercent / 100 * (item1Price + item2Price);
 		
-		System.out.println("You will get a discount of " + discount);
+		System.out.printf("You will get a discount of RM%5.2f\n",discount);
 		
 		double totalPrice = item1Price + item2Price - discount;
-		System.out.println("The total price will be RM" + totalPrice);
+		System.out.printf("The total price will be RM%8.2f\n", totalPrice);
 		
 		System.out.print("How many " + item1 + " do you want :");
 		numItem1 = sc.nextInt();
@@ -55,9 +55,9 @@ public class Shop
 		double subTotal = (numItem1 * item1Price) + (numItem2 * item2Price);
 	    discount = discPercent / 100.0 * subTotal;
 	    totalPrice = subTotal - discount;
-	    System.out.println("Subtotal : " + subTotal);
-	    System.out.println("Discount given : " + discount);
-	    System.out.println("Please pay: " + totalPrice);
+	    System.out.printf("Subtotal : RM%8.2f\n",subTotal);
+	    System.out.printf("Discount given : RM%8.2f\n", discount);
+	    System.out.printf("Please pay: RM%8.2f\n", totalPrice);
 		
 	}
 }
