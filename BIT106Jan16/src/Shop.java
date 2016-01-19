@@ -1,6 +1,6 @@
-/* Tutorial 2 exercise 
+/* Tutorial 2 exercise - Worksheet 2 
  * This program is to be used in a computer shop
- * Written by: 
+ * Written by: Ng Shu Min
  * Date:
  */ 
 import java.util.Scanner;
