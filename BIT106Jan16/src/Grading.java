@@ -15,11 +15,14 @@ public class Grading {
     {
         // Create Scanner object
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter your score :");
-        int score = sc.nextInt();
+        System.out.print("Enter your assignment score :");
+        int ascore = sc.nextInt();
+        System.out.print("Enter your exam score :");
+        int escore = sc.nextInt();
         
-        // see if they pass
-        if (score >= 50)
+        // pass only if assignment is >=50
+        // and exam is >=60
+        if (ascore >= 50 && escore >=60)
             System.out.println("You pass!");
         else
             System.out.println("You fail");
