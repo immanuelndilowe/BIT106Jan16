@@ -13,17 +13,20 @@ public class Scores {
         Scanner sc = new Scanner(System.in);
         int total = 0;
         int numTimes = 1;
+        System.out.print("How many assignments? :");
+        int numAssignments = sc.nextInt();
         
-        while (numTimes <=10)
+        while (numTimes <= numAssignments)
         {
             // Ask user for the  score
-            System.out.print("Enter score for student :");
+            System.out.print("Enter score for student " + numTimes +":");
             int score = sc.nextInt();
-            total = total + score;
+            total += score;
             // update numTimes
-            numTimes = numTimes + 1;
+            numTimes++;
         }
-        double average = (double) total / 10;
+        double average = (double) total / numAssignments;
+        System.out.println("The total score is " + total);
         System.out.printf("The average score is %5.3f %n", average);
     }
     
