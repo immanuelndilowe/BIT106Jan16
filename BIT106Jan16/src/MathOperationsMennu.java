@@ -23,32 +23,39 @@ public class MathOperationsMennu {
         int choice;
         // then calculate the square, cube, square root 
         // and reciprocal
-        System.out.println("Do you want to calculate");
-        System.out.println("1. square");
-        System.out.println("2. cube");
-        System.out.println("3. square root");
-        System.out.println("4. reciprocal");
-        System.out.print("Enter your choice: ");
-        choice = sc.nextInt();
-        
-        switch(choice)
+        do 
         {
-            case 1:
-                System.out.println("("+n+")^2 = " + (n*n));
-                break;
-            case 2:       
-                System.out.println("("+n+")^3 = " + (n*n*n));
-                break;
-            case 3:
-                System.out.println("sqrt("+n+") = " + Math.sqrt(n));
-                break;
-            case 4:
-                System.out.println("1/"+n+" = " + (1/n));
-                break;
-            default:
-                System.out.println("Invalid choice");
-                break;
-        }   // end of switch
-            
+            System.out.println("Do you want to calculate");
+            System.out.println("1. square");
+            System.out.println("2. cube");
+            System.out.println("3. square root");
+            System.out.println("4. reciprocal");
+            System.out.println("5. STOP!");
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
+
+            switch(choice)
+            {
+                case 1:
+                    System.out.println("("+n+")^2 = " + (n*n));
+                    break;
+                case 2:       
+                    System.out.println("("+n+")^3 = " + (n*n*n));
+                    break;
+                case 3:
+                    System.out.println("sqrt("+n+") = " + Math.sqrt(n));
+                    break;
+                case 4:
+                    System.out.println("1/"+n+" = " + (1/n));
+                    break;
+                case 5:
+                    System.out.println("Goodbye!");
+                    break;
+                default:
+                    System.out.println("Invalid choice");
+                    break;
+            }   // end of switch
+        } while (choice!= 5); 
+        // 
     } // end of main
 }
