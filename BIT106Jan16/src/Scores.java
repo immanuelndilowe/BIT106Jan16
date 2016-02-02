@@ -12,22 +12,18 @@ public class Scores {
     {
         Scanner sc = new Scanner(System.in);
         int total = 0;
-        // Ask user for the first score
-        System.out.print("Enter score for student 1 :");
-        int score1 = sc.nextInt();
-        total = total + score1;
+        int numTimes = 1;
         
-        // Ask user for the second score
-        System.out.print("Enter score for student 2 :");
-        int score2 = sc.nextInt();
-        total = total + score2;
-        
-        // Ask user for the third score
-        System.out.print("Enter score for student 3 :");
-        int score3 = sc.nextInt();
-        total = total + score3;
-        
-        double average = (double) total / 3;
+        while (numTimes <=10)
+        {
+            // Ask user for the  score
+            System.out.print("Enter score for student :");
+            int score = sc.nextInt();
+            total = total + score;
+            // update numTimes
+            numTimes = numTimes + 1;
+        }
+        double average = (double) total / 10;
         System.out.printf("The average score is %5.3f %n", average);
     }
     
