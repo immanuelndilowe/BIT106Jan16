@@ -31,17 +31,24 @@ public class MathOperationsMennu {
         System.out.print("Enter your choice: ");
         choice = sc.nextInt();
         
-        if (choice == 1)
-            System.out.println("("+n+")^2 = " + (n*n));
-        else if (choice == 2)
-            System.out.println("("+n+")^3 = " + (n*n*n));
-        else if (choice == 3)
-            System.out.println("sqrt("+n+") = " + Math.sqrt(n));
-        else if (choice == 4)
-            System.out.println("1/"+n+" = " + (1/n));
-        else
-            System.out.println("Invalid choice");
-    }
+        switch(choice)
+        {
+            case 1:
+                System.out.println("("+n+")^2 = " + (n*n));
+                break;
+            case 2:       
+                System.out.println("("+n+")^3 = " + (n*n*n));
+                break;
+            case 3:
+                System.out.println("sqrt("+n+") = " + Math.sqrt(n));
+                break;
+            case 4:
+                System.out.println("1/"+n+" = " + (1/n));
+                break;
+            default:
+                System.out.println("Invalid choice");
+                break;
+        }   // end of switch
             
-    
+    } // end of main
 }
